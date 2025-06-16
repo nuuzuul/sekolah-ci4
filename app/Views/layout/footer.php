@@ -11,14 +11,14 @@
       </div>
       <div class="col-md-4 mb-2">
         <i class="bi bi-telephone-fill me-2"></i>
-        <a href="https://wa.me/6282189641051" target="_blank" class="text-white text-decoration-none">
-          0821-8964-1051
+        <a href="https://wa.me/62821" target="_blank" class="text-white text-decoration-none">
+          0821
         </a>
       </div>
       <div class="col-md-4 mb-2">
         <i class="bi bi-envelope-fill me-2"></i>
         <a href="mailto:amuhnuzul@gmail.com" class="text-white text-decoration-none">
-          amuhnuzul@gmail.com
+          sekolahku@gmail.com
         </a>
       </div>
     </div>
