@@ -21,8 +21,6 @@ class Home extends BaseController
         return view('home/penerimaan', $data);
     }
 
-
-
     public function kontak()
     {
         $data['title'] = 'Kontak Sekolah';

@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="<?= base_url('assets/image/sekolah.png') ?>" type="image/png">
     <style>
         body {
             display: flex;
@@ -63,6 +64,32 @@
 
     </style>
 </head>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const logoutBtn = document.getElementById('logoutButton');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Yakin ingin logout?',
+                text: "Sesi kamu akan diakhiri.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Logout',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = "<?= base_url('/admin/logout') ?>";
+                }
+            });
+        });
+    }
+});
+</script>
+
 <body>
 
 <!-- Sidebar -->
@@ -84,9 +111,10 @@
         </a>
     </nav>
     <hr class="bg-secondary mx-3">
-    <a href="<?= base_url('/admin/logout') ?>" class="nav-link text-danger">
+    <a href="#" id="logoutButton" class="nav-link text-danger">
         <i class="bi bi-box-arrow-right me-2"></i> Logout
     </a>
+
 </div>
 
 <!-- Content -->
